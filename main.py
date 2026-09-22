@@ -23,7 +23,7 @@ def simpan_database(data):
 db_data = muat_database()
 
 st.set_page_config(
-    page_title="Vortex Accumulator", page_icon="⚡", layout="centered"
+    page_title="Vortex Accumulator", page_icon="", layout="centered"
 )
 
 # Inisialisasi Session State untuk navigasi halaman
@@ -35,7 +35,7 @@ if "user_login" not in st.session_state:
 # --- 1. HALAMAN UTAMA ---
 if st.session_state.halaman == "utama":
   st.markdown(
-      "<h1 style='text-align: center;'>⚡ VORTEX ACCUMULATOR</h1>",
+      "<h1 style='text-align: center;'>VORTEX ACCUMULATOR</h1>",
       unsafe_allow_html=True,
   )
   st.markdown(
@@ -56,7 +56,7 @@ if st.session_state.halaman == "utama":
 
 # --- 2. HALAMAN MASUK / LOGIN ---
 elif st.session_state.halaman == "login":
-  st.subheader("🔑 MASUK AKUN")
+  st.subheader("MASUK AKUN")
 
   username = st.text_input("USERNAME")
   password = st.text_input("PASSWORD", type="password")
@@ -82,7 +82,7 @@ elif st.session_state.halaman == "login":
 
 # --- 3. HALAMAN DAFTAR / REGISTRASI ---
 elif st.session_state.halaman == "daftar":
-  st.subheader("📝 PENDAFTARAN AKUN")
+  st.subheader("PENDAFTARAN AKUN")
 
   new_user = st.text_input("BUAT USERNAME")
   new_pass = st.text_input("BUAT PASSWORD", type="password")
