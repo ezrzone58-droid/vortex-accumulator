@@ -23,7 +23,7 @@ def simpan_database(data):
 db_data = muat_database()
 
 st.set_page_config(
-    page_title="Sistem Perhitungan", page_icon="⚡", layout="centered"
+    page_title="Vortex Accumulator", page_icon="⚡", layout="centered"
 )
 
 # Inisialisasi Session State untuk navigasi halaman
@@ -35,7 +35,7 @@ if "user_login" not in st.session_state:
 # --- 1. HALAMAN UTAMA ---
 if st.session_state.halaman == "utama":
   st.markdown(
-      "<h1 style='text-align: center;'>⚡ SISTEM PERHITUNGAN</h1>",
+      "<h1 style='text-align: center;'>⚡ VORTEX ACCUMULATOR</h1>",
       unsafe_allow_html=True,
   )
   st.markdown(
